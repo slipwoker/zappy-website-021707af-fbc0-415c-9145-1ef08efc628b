@@ -259,283 +259,321 @@
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
 
+
+
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-hero-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg-dark);
-    overflow: hidden;
-    padding-bottom: 80px;
-    direction: rtl;
-    text-align: right;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
 
-.index-hero-section .hero-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+/* Background Image */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 
+.index-hero-section .hero-bg-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 100vh !important;
+}
+
+/* Scrim Overlay */
 .index-hero-section .hero-scrim {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(to bottom, rgba(46, 41, 37, 0.55) 0%, rgba(46, 41, 37, 0.75) 60%, rgba(46, 41, 37, 0.95) 100%);
-    pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(46, 41, 37, 0.65) 0%, rgba(46, 41, 37, 0.85) 100%);
+  pointer-events: none;
 }
 
+/* Decorative Mandala */
 .index-hero-section .hero-mandala {
-    position: absolute;
-    top: 120px;
-    right: 60px;
-    width: 120px;
-    height: 120px;
-    color: var(--accent);
-    opacity: 0.7;
-    z-index: 0;
-    pointer-events: none;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  opacity: 0.75;
+  pointer-events: none;
 }
 
+.index-hero-section .hero-mandala svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Content Overlay */
 .index-hero-section .hero-content {
-    position: relative;
-    z-index: 10;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 160px 24px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--text-light);
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 120px 24px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.index-hero-section .hero-label {
-    display: inline-block;
-    background: rgba(205, 189, 170, 0.15);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(205, 189, 170, 0.25);
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    padding: 8px 20px;
-    border-radius: 100px;
-    margin-bottom: 24px;
-    line-height: 1.4;
+.index-hero-section .hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
-.index-hero-section .hero-title {font-family: 'Cormorant Garamond', 'Playfair Display', serif;
-    font-size: clamp(2.8rem, 6vw, 4.5rem);
-    font-weight: 700;
-    line-height: 1.1;
-    color: var(--text-light);
-    margin: 0 0 20px 0;
-    max-width: 800px;}
+/* Text Group */
+.index-hero-section .hero-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  max-width: 700px;
+}
+
+.index-hero-section .hero-kicker {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0;
+  text-align: start;
+  line-height: 1.6;
+}
+
+.index-hero-section .hero-headline {font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0;
+  text-align: start;}
 
 .index-hero-section .hero-subtitle {
-    font-family: 'Assistant', 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.7;
-    color: var(--text-light);
-    margin: 0 0 32px 0;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    max-width: 700px;
-    opacity: 0.95;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-light);
+  margin: 0;
+  text-align: start;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
 }
 
+/* Benefits List */
+.index-hero-section .hero-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.index-hero-section .hero-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: start;
+}
+
+.index-hero-section .hero-benefit-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+  margin-top: 2px;
+}
+
+.index-hero-section .hero-benefit-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.index-hero-section .hero-benefit-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-light);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.index-hero-section .hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 14px 32px;
+  background: var(--primary);
+  color: #FFFFFF;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 16px 48px rgba(196, 97, 74, 0.25);
+  cursor: pointer;
+  text-align: center;
+}
+
+.index-hero-section .hero-btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 64px rgba(196, 97, 74, 0.35);
+  background: #C4614A;
+}
+
+.index-hero-section .hero-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text-light);
+  border: 1.5px solid var(--border-dark);
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-align: center;
+}
+
+.index-hero-section .hero-btn-ghost:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Event Details */
 .index-hero-section .hero-event-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 36px;
-    background: rgba(46, 41, 37, 0.4);
-    backdrop-filter: blur(8px);
-    border: 1px solid var(--border-dark);
-    border-radius: 16px;
-    padding: 16px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-dark);
 }
 
-.index-hero-section .event-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--accent);
-    font-size: 1rem;
-    font-weight: 500;
+.index-hero-section .hero-event-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: start;
 }
 
-.index-hero-section .event-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    color: var(--primary);
+.index-hero-section .hero-event-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--primary);
 }
 
-.index-hero-section .hero-benefits {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 40px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 40px;
-    max-width: 750px;
-    width: 100%;
+.index-hero-section .hero-event-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.index-hero-section .hero-benefits li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-light);
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+.index-hero-section .hero-event-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-light);
+  opacity: 0.85;
 }
 
-.index-hero-section .benefit-icon {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-    color: var(--primary);
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-}
-
-.index-hero-section .hero-ctas {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    margin-top: 8px;
-}
-
-.index-hero-section .btn-primary {
-    background: var(--primary);
-    color: #FFFFFF;
-    padding: 16px 36px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 24px rgba(201, 111, 74, 0.35);
-    text-shadow: none;
-}
-
-.index-hero-section .btn-primary:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 32px rgba(201, 111, 74, 0.5);
-    background: #D47A55;
-}
-
-.index-hero-section .btn-ghost {
-    background: transparent;
-    color: var(--text-light);
-    border: 1.5px solid var(--border-dark);
-    padding: 14px 32px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 0.95rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(4px);
-    text-shadow: none;
-}
-
-.index-hero-section .btn-ghost:hover {
-    background: rgba(255,255,255,0.1);
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateY(-4px);
-}
-
-/* Bottom Divider */
-.index-hero-section .hero-divider-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    pointer-events: none;
-    z-index: 5;
-}
-
-.index-hero-section .hero-divider-wrapper svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 768px) {
-    .index-hero-section {
-        padding-bottom: 60px;
-    }
+  .index-hero-section .hero-content {
+    padding: 100px 16px 40px;
+  }
 
-    .index-hero-section .hero-mandala {
-        top: 80px;
-        right: 20px;
-        width: 80px;
-        height: 80px;
-        opacity: 0.5;
-    }
+  .index-hero-section .hero-container {
+    gap: 24px;
+  }
 
-    .index-hero-section .hero-content {
-        padding: 120px 20px 40px;
-    }
+  .index-hero-section .hero-headline {
+    font-size: 2rem;
+  }
 
-    .index-hero-section .hero-title {
-        font-size: 2.4rem;
-        max-width: 100%;
-    }
+  .index-hero-section .hero-subtitle {
+    font-size: 1rem;
+  }
 
-    .index-hero-section .hero-subtitle {
-        font-size: 1.1rem;
-        max-width: 100%;
-    }
+  .index-hero-section .hero-benefits-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 
-    .index-hero-section .hero-event-details {
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px 20px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
 
-    .index-hero-section .hero-benefits {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
+  .index-hero-section .hero-btn-primary,
+  .index-hero-section .hero-btn-ghost {
+    width: 100%;
+    text-align: center;
+  }
 
-    .index-hero-section .hero-ctas {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        gap: 12px;
-    }
+  .index-hero-section .hero-event-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-    .index-hero-section .btn-primary,
-    .index-hero-section .btn-ghost {
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .index-hero-section .hero-mandala {
+    top: 5%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    opacity: 0.6;
+  }
+}
 
-    .index-hero-section .hero-divider-wrapper {
-        height: 60px;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .hero-headline {
+    font-size: 2.5rem;
+  }
+
+  .index-hero-section .hero-benefits-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 /* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
 .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
@@ -1083,98 +1121,108 @@
 </script>
   
   <main id="main">
-    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="hero" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(&quot;assets/image-section-background-1781707772310-pbsx5i.webp background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(0, 0, 0, 0.3); --zappy-bg-image: url(&quot;assets/image-section-background-1781707772310-pbsx5i.webp cursor: url(&quot; data: image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 50 50' fill='none' xmlns='http" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/image-section-background-1781707772310-pbsx5i.webp" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-element-id="zappy-hero-bg-hero" data-element-type="background-image" data-zappy-bg-position="42% 43%" data-zappy-bg-zoom="1.4">
-    <!-- Background Image Layer -->
-    <div class="hero-bg" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center;"></div>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="hero">
+  <!-- Background Image -->
+  <div class="hero-bg-wrapper">
+    <div class="hero-bg-image" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center; min-height: 400px;"></div>
+  </div>
 
-    <!-- Scrim Overlay for Text Legibility -->
-    <div class="hero-scrim" style="display: none" data-zappy-original-bg="hidden"></div>
+  <!-- Scrim Overlay -->
+  <div class="hero-scrim" aria-hidden="true"></div>
 
-    <!-- Mandala Decorative Motif -->
-    <svg class="hero-mandala" data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"></circle>
-        <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"></circle>
-        <circle cx="50" cy="50" r="28" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"></circle>
-        <circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"></circle>
-        <circle cx="50" cy="50" r="8" fill="currentColor" opacity="0.7"></circle>
-        <line x1="50" y1="2" x2="50" y2="12" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="50" y1="88" x2="50" y2="98" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="2" y1="50" x2="12" y2="50" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="88" y1="50" x2="98" y2="50" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="16" y1="16" x2="23" y2="23" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="77" y1="77" x2="84" y2="84" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="84" y1="16" x2="77" y2="23" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
-        <line x1="23" y1="77" x2="16" y2="84" stroke="currentColor" stroke-width="1.5" opacity="0.6"></line>
+  <!-- Decorative Mandala Motif -->
+  <div class="hero-mandala" aria-hidden="true">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary)" stroke-width="1.5" opacity="0.6"></circle>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="var(--primary)" stroke-width="1" opacity="0.4"></circle>
+      <circle cx="50" cy="50" r="15" fill="none" stroke="var(--primary)" stroke-width="1.5" opacity="0.7"></circle>
+      <circle cx="50" cy="50" r="3" fill="var(--primary)" opacity="0.8"></circle>
+      <line x1="50" y1="5" x2="50" y2="20" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="50" y1="80" x2="50" y2="95" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="5" y1="50" x2="20" y2="50" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="80" y1="50" x2="95" y2="50" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="18.2" y1="18.2" x2="28.8" y2="28.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="71.2" y1="71.2" x2="81.8" y2="81.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="18.2" y1="81.8" x2="28.8" y2="71.2" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="71.2" y1="18.2" x2="81.8" y2="28.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
     </svg>
+  </div>
 
-    <!-- Content Overlay Group -->
-    <div class="hero-content">
-        <!-- Top Badge / Subtitle -->
-        <p><span class="hero-label">לראשונה בישראל — בהנחיית קרן סלע ופטריסיה יהב</span>
-        
-        
-        </p><!-- Main Headline --><h1 class="hero-title" >נחשפת התוכנית<br>לאומנויות הטיפול</h1>
-        
-        <!-- Supporting Subtitle -->
+  <!-- Content Overlay -->
+  <div class="hero-content">
+    <div class="hero-container">
+      <div class="hero-text-group">
+        <p class="hero-kicker">לראשונה בישראל — בהנחיית קרן סלע ופטריסיה יהב</p>
+        <h1 class="hero-headline">נחשפת התוכנית<br>לאומנויות הטיפול</h1>
         <h3 class="hero-subtitle">הוובינר שיגלה לכם כיצד להפוך למטפלים שיודעים בדיוק מה לעשות, סומכים על עצמם מול כל מטופל ובונים קליניקה מלאה מתוך מקצועיות וביטחון</h3>
+      </div>
 
-        <!-- Event Details Widget -->
-        <div class="hero-event-details">
-            <div class="event-item">
-                <svg class="event-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                <span>תאריך: ________</span>
-            </div>
-            <div class="event-item">
-                <svg class="event-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <span>שעה: ________</span>
-            </div>
-            <div class="event-item">
-                <svg class="event-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <span>אונליין | ללא עלות</span>
-            </div>
+      <ul class="hero-benefits-list">
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לפתח ביטחון מקצועי אמיתי מול מטופלים</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לדעת כיצד לזהות את שורש הקושי ולהוביל תהליך מדויק</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לקבל מודלים, כלים והמשגות שישמשו אתכם בכל מפגש</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">להיות חלק מקהילה מקצועית של מטפלים שמתפתחים יחד</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">ליצור תוצאות משמעותיות יותר עבור המטופלים שלכם</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לבנות קליניקה המבוססת על מקצועיות, ביטחון והמלצות</span>
+        </li>
+      </ul>
+
+      <div class="hero-cta-group">
+        <a href="#register" class="hero-btn-primary">שריינו את מקומכם עכשיו</a>
+        <a href="#learn-more" class="hero-btn-ghost">למידע נוסף על התוכנית</a>
+      </div>
+
+      <div class="hero-event-details">
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </span>
+          <span class="hero-event-text">תאריך: ________</span>
         </div>
-
-        <!-- Key Benefits List -->
-        <ul class="hero-benefits">
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>לפתח ביטחון מקצועי אמיתי מול מטופלים</span>
-            </li>
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>לדעת כיצד לזהות את שורש הקושי ולהוביל תהליך מדויק</span>
-            </li>
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>לקבל מודלים, כלים והמשגות שישמשו אתכם בכל מפגש</span>
-            </li>
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>להיות חלק מקהילה מקצועית של מטפלים שמתפתחים יחד</span>
-            </li>
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>ליצור תוצאות משמעותיות יותר עבור המטופלים שלכם</span>
-            </li>
-            <li>
-                <svg class="benefit-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span>לבנות קליניקה המבוססת על מקצועיות, ביטחון והמלצות</span>
-            </li>
-        </ul>
-
-        <!-- CTA Buttons -->
-        <div class="hero-ctas">
-            <a href="#register" class="btn-primary" data-element-type="button" data-element-id="btn-1781707382939-5lz1hnyng" data-native-element="true">שריינו את מקומכם עכשיו</a>
-            <a href="#learn-more" class="btn-ghost" data-element-type="button" data-element-id="btn-1781707382939-oistvxx78" data-native-element="true">למידע נוסף על התוכנית</a>
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </span>
+          <span class="hero-event-text">שעה: ________</span>
         </div>
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span class="hero-event-text">אונליין | ללא עלות</span>
+        </div>
+      </div>
     </div>
-
-    <!-- Bottom Divider / Transition -->
-    <div class="hero-divider-wrapper">
-        <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,80 L0,30 Q50,25 100,32 T200,28 Q250,32 300,25 T400,30 Q450,28 500,32 T600,25 Q650,30 700,28 T800,32 Q850,25 900,30 T1000,28 Q1050,32 1100,25 T1200,30 L1200,80 Z" fill="#FAF6F2"></path>
-        </svg>
-    </div>
+  </div>
 </section>
 
 <section data-band-index="1" id="benefits" class="index-benefits-section" data-layout-spec="בית-benefits">
