@@ -2,13 +2,13 @@
 
 A pioneering Israeli training program called 'The Arts of Therapy' led by clinical psychologist Keren Sela and Patricia Yahav, founder of the Source Method. The program targets therapists who feel knowledgeable but lack professional confidence and a unified framework. It offers an integrative holistic approach connecting body, mind, consciousness, and soul, positioning itself as the first of its kind in Israel. The brand voice is warm, empowering, and deeply spiritual yet professional — combining psychological credibility with personal growth and healing energy. The webinar page serves as the top-of-funnel entry point to a paid certification program.
 
-Source: https://-021707af.zappy5.app
+Source: https://example.com
 
 ---
 
 ## גלו את המטפל הבטוח שבכם — התוכנית לאומנויות הטיפול
 
-URL: https://-021707af.zappy5.app
+URL: https://example.com
 Description: וובינר חינמי למטפלים רגשיים שמוכנים לצמוח. בואו לגלות איך לפתח ביטחון מקצועי עמוק דרך הכשרה אינטגרטיבית גוף נפש נשמה. המקום שלכם למסע ריפוי מעצים מתחיל כאן!
 
 גלו את המטפל הבטוח שבכם — התוכנית לאומנויות הטיפול
@@ -813,7 +813,7 @@ Description: וובינר חינמי למטפלים רגשיים שמוכנים 
 
 ## מדיניות פרטיות
 
-URL: https://-021707af.zappy5.app/privacy
+URL: https://example.com/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -1082,7 +1082,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://-021707af.zappy5.app/accessibility
+URL: https://example.com/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1360,7 +1360,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://-021707af.zappy5.app/terms
+URL: https://example.com/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
