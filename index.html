@@ -1121,17 +1121,722 @@
 </script>
   
   <main id="main">
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="hero">
+  <!-- Background Image -->
+  <div class="hero-bg-wrapper">
+    <div class="hero-bg-image" style="background-image: url('assets/site-index-hero-image-1.webp'); background-size: cover; background-position: center; min-height: 400px;"></div>
+  </div>
+
+  <!-- Scrim Overlay -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <!-- Decorative Mandala Motif -->
+  <div class="hero-mandala" aria-hidden="true">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary)" stroke-width="1.5" opacity="0.6"></circle>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="var(--primary)" stroke-width="1" opacity="0.4"></circle>
+      <circle cx="50" cy="50" r="15" fill="none" stroke="var(--primary)" stroke-width="1.5" opacity="0.7"></circle>
+      <circle cx="50" cy="50" r="3" fill="var(--primary)" opacity="0.8"></circle>
+      <line x1="50" y1="5" x2="50" y2="20" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="50" y1="80" x2="50" y2="95" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="5" y1="50" x2="20" y2="50" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="80" y1="50" x2="95" y2="50" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="18.2" y1="18.2" x2="28.8" y2="28.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="71.2" y1="71.2" x2="81.8" y2="81.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="18.2" y1="81.8" x2="28.8" y2="71.2" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+      <line x1="71.2" y1="18.2" x2="81.8" y2="28.8" stroke="var(--primary)" stroke-width="1.5" opacity="0.5"></line>
+    </svg>
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="hero-content">
+    <div class="hero-container">
+      <div class="hero-text-group">
+        <p class="hero-kicker">לראשונה בישראל — בהנחיית קרן סלע ופטריסיה יהב</p>
+        <h1 class="hero-headline">נחשפת התוכנית<br>לאומנויות הטיפול</h1>
+        <h3 class="hero-subtitle">הוובינר שיגלה לכם כיצד להפוך למטפלים שיודעים בדיוק מה לעשות, סומכים על עצמם מול כל מטופל ובונים קליניקה מלאה מתוך מקצועיות וביטחון</h3>
+      </div>
+
+      <ul class="hero-benefits-list">
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לפתח ביטחון מקצועי אמיתי מול מטופלים</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לדעת כיצד לזהות את שורש הקושי ולהוביל תהליך מדויק</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לקבל מודלים, כלים והמשגות שישמשו אתכם בכל מפגש</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">להיות חלק מקהילה מקצועית של מטפלים שמתפתחים יחד</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">ליצור תוצאות משמעותיות יותר עבור המטופלים שלכם</span>
+        </li>
+        <li class="hero-benefit-item">
+          <span class="hero-benefit-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+          </span>
+          <span class="hero-benefit-text">לבנות קליניקה המבוססת על מקצועיות, ביטחון והמלצות</span>
+        </li>
+      </ul>
+
+      <div class="hero-cta-group">
+        <a href="#register" class="hero-btn-primary">שריינו את מקומכם עכשיו</a>
+        <a href="#learn-more" class="hero-btn-ghost">למידע נוסף על התוכנית</a>
+      </div>
+
+      <div class="hero-event-details">
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </span>
+          <span class="hero-event-text">תאריך: ________</span>
+        </div>
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </span>
+          <span class="hero-event-text">שעה: ________</span>
+        </div>
+        <div class="hero-event-item">
+          <span class="hero-event-icon" data-element-type="icon" data-icon-type="svg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span class="hero-event-text">אונליין | ללא עלות</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-band-index="1" id="benefits" class="index-benefits-section" data-layout-spec="בית-benefits">
+  <div class="benefits-container">
+    <!-- Intro Block -->
+    <div class="benefits-intro">
+      <div class="benefits-divider-flourish" aria-hidden="true">
+        <svg data-no-icon-edit="true" aria-hidden="true" width="80" height="12" viewBox="0 0 80 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="6" x2="30" y2="6" stroke="var(--primary)" stroke-width="1.5"></line>
+          <line x1="50" y1="6" x2="80" y2="6" stroke="var(--primary)" stroke-width="1.5"></line>
+          <circle cx="40" cy="6" r="3" stroke="var(--primary)" stroke-width="1.5"></circle>
+          <circle cx="40" cy="6" r="1" fill="var(--primary)"></circle>
+        </svg>
+      </div>
+      <h2 class="benefits-heading">מה תקבלו מהוובינר?</h2>
+      <p class="benefits-subheading">הדרך לביטחון מקצועי אמיתי מתחילה כאן — עם כלים, המשגות וקהילה שתומכת בכם בכל צעד</p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="benefits-grid">
+      <!-- Card 1 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">ביטחון מקצועי אמיתי</h3>
+        <p class="benefit-text">לפתח את היכולת לשבת מול כל מטופל ולדעת בוודאות — "אני יודע.ת מה אני עושה" — מתוך חיבור עמוק לכלים שלמדתם</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">בהירות בזיהוי שורש הקושי</h3>
+        <p class="benefit-text">לרכוש יכולת אבחון מדויקת שמאפשרת לזהות את מקור הבעיה — לא רק את הסימפטומים — ולהוביל תהליך ריפוי ממוקד</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19.5V4.5C4 3.67157 4.67157 3 5.5 3H18.5C19.3284 3 20 3.67157 20 4.5V19.5C20 20.3284 19.3284 21 18.5 21H5.5C4.67157 21 4 20.3284 4 19.5Z" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M8 7H16M8 11H16M8 15H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">מודלים וכלים פרקטיים</h3>
+        <p class="benefit-text">לקבל ארגז כלים עשיר של מודלים טיפוליים, המשגות וטכניקות מעשיות שתדעו ליישם בכל מפגש — מהראשון ועד האחרון</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">קהילה מקצועית תומכת</h3>
+        <p class="benefit-text">להיות חלק מקבוצת מטפלים איכותית שמתפתחת יחד — מקום לשאול, לשתף, להתייעץ ולצמוח בתוך מרחב בטוח ומכיל</p>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">תוצאות משמעותיות למטופלים</h3>
+        <p class="benefit-text">ליצור שינוי עמוק ואמיתי בחיי המטופלים שלכם — לראות אותם פורחים, משתחררים מדפוסים ישנים ומגלים את הכוח הפנימי שלהם</p>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="benefit-card">
+        <div class="benefit-icon-circle">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="benefit-title">קליניקה יציבה ומבוססת</h3>
+        <p class="benefit-text">לבנות קליניקה משגשגת שנשענת על מקצועיות, ביטחון עצמי והמלצות — ולהפוך את התשוקה שלכם לקריירה יציבה ומספקת</p>
+      </article>
+    </div>
+
+    <!-- Reflective Statement Band -->
+    <div class="benefits-reflection-band">
+      <p class="benefits-reflection-text">הביטחון המקצועי אינו נולד מהידע בלבד — הוא נובע מהידיעה שיש לכם מסגרת, כלים וקהילה שמאפשרים לכם להביא את מלוא הכישרון שלכם לידי ביטוי</p>
+      <div class="benefits-reflection-author">— צוות התוכנית לאומנויות הטיפול</div>
+    </div>
+  </div>
+
+  <!-- Bottom Divider: Curved layered-paper separator -->
+  <div class="benefits-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 L0,50 Q75,35 150,48 T300,42 Q375,48 450,38 T600,45 Q675,38 750,48 T900,40 Q975,48 1050,38 T1200,48 L1200,80 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+<section data-band-index="2" id="story" class="index-story-section" data-layout-spec="בית-story">
+    <div class="story-container">
+        <!-- Top Centered Block -->
+        <div class="story-intro">
+            <h2 class="story-intro-heading">האם גם אתם מרגישים שמשהו חסר?</h2>
+            <p class="story-intro-text">יש לכם לב גדול, ידע נרחב ורצון אמיתי לעזור. למדתם שיטות רבות, צברתם כלים, אבל עדיין — כשאתם יושבים מול המטופל, עולה השאלה הקטנה הזו: "האם אני באמת יודע מה אני עושה?"</p>
+        </div>
+
+        <!-- Bottom Asymmetrical Split -->
+        <div class="story-split">
+            <!-- START Column: Narrative Blocks -->
+            <div class="story-narrative">
+                <div class="narrative-block">
+                    <div class="narrative-icon-wrapper">
+                        <svg class="narrative-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"></circle>
+                            <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="narrative-content">
+                        <h3 class="narrative-title">האמת שרוב המטפלים לא מדברים עליה</h3>
+                        <p class="narrative-text">הסיבה שרבים מהמטפלים אינם מצליחים לפרוץ קדימה אינה חוסר כישרון. היא גם לא חוסר רצון. היא חוסר ביטחון מקצועי. הביטחון הזה הוא המנוע השקט שמאפשר להוביל תהליכים, להחזיק מקרים מורכבים, ולגבות את הערך שלכם.</p>
+                    </div>
+                </div>
+                <div class="narrative-block">
+                    <div class="narrative-icon-wrapper">
+                        <svg class="narrative-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="narrative-content">
+                        <h3 class="narrative-title">ידע מפוזר לא יוצר ודאות</h3>
+                        <p class="narrative-text">קורסים, סדנאות, שיטות — צברתם המון ידע. אבל כשהוא נשאר מפורק ומפוזר, הוא לא הופך לוודאות. בלי מסגרת אינטגרטיבית אחת שמחברת בין גוף, נפש, תודעה ונשמה, קשה לדעת בדיוק מה לעשות בכל מפגש.</p>
+                    </div>
+                </div>
+                <div class="narrative-block">
+                    <div class="narrative-icon-wrapper">
+                        <svg class="narrative-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5"></path>
+                            <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="narrative-content">
+                        <h3 class="narrative-title">המחיר של היעדר דרך אחידה</h3>
+                        <p class="narrative-text">ללא נתיב ברור, הקליניקה נשארת תלויה ברגעים של השראה. המטופלים חשים את חוסר הוודאות, האמון נפגע, והצמיחה המקצועית נעצרת. התוצאה: קליניקה לא יציבה, תמחור חסר ביטחון, ופספוס של ריפוי עמוק באמת.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END Column: Stacked Insight Cards -->
+            <div class="story-insights">
+                <div class="insight-card card-1">
+                    <p class="insight-text">"אני לומדת ולומדת, אבל עדיין לא מרגישה מוכנה באמת."</p>
+                    <span class="insight-label">חוסר ודאות</span>
+                </div>
+                <div class="insight-card card-2">
+                    <p class="insight-text">"יש לי ארגז כלים ענק, אבל אני לא יודעת מתי להשתמש בכל כלי."</p>
+                    <span class="insight-label">הכשרה ללא אינטגרציה</span>
+                </div>
+                <div class="insight-card card-3">
+                    <p class="insight-text">"אני מפחדת שהקליניקה שלי לא תשרוד אם לא אמצא את הביטחון שלי."</p>
+                    <span class="insight-label">חוסר יציבות קלינית</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Divider: Gradient fade + organic concentric circles -->
+    <div class="story-divider-wrapper">
+        <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="story-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#F3EBDD" stop-opacity="0"></stop>
+                    <stop offset="100%" stop-color="#F3EBDD" stop-opacity="1"></stop>
+                </linearGradient>
+            </defs>
+            <!-- Gradient fill to blend into next section -->
+            <rect x="0" y="0" width="1200" height="120" fill="url(#story-fade)"></rect>
+            <!-- Organic concentric circles line drawing -->
+            <g fill="none" stroke="#C96F4A" stroke-width="1.5" opacity="0.3" transform="translate(600, 80)">
+                <circle cx="0" cy="0" r="15"></circle>
+                <circle cx="0" cy="0" r="30"></circle>
+                <circle cx="0" cy="0" r="50"></circle>
+                <circle cx="0" cy="0" r="75"></circle>
+                <circle cx="0" cy="0" r="105"></circle>
+                <circle cx="0" cy="0" r="140"></circle>
+                <circle cx="0" cy="0" r="180"></circle>
+            </g>
+        </svg>
+    </div>
+</section>
+
+<section data-band-index="3" id="features" class="index-features-section" data-layout-spec="בית-features" dir="rtl">
+    <div class="index-features-section__container">
+        <!-- Intro Block -->
+        <div class="index-features-section__intro">
+            <div class="index-features-section__divider-flourish" aria-hidden="true">
+                <svg data-no-icon-edit="true" aria-hidden="true" width="80" height="20" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="30" y2="10" stroke="var(--primary)" stroke-width="1.5"></line>
+                    <path d="M35 10 L40 5 L45 10 L40 15 Z" fill="var(--primary)"></path>
+                    <line x1="50" y1="10" x2="80" y2="10" stroke="var(--primary)" stroke-width="1.5"></line>
+                </svg>
+            </div>
+            <h2 class="index-features-section__title">המסלול שיהפוך אתכם למטפלים שאתם שואפים להיות</h2>
+            <p class="index-features-section__subtitle">תוכנית הכשרה פורצת דרך, ראשונה מסוגה בישראל, שמחברת בין גוף, נפש, תודעה ונשמה לשפה טיפולית אחת — ומעניקה לכם את הביטחון, הכלים והקהילה להוביל תהליכי ריפוי עמוקים.</p>
+        </div>
+
+        <!-- 2-Column Layout: Features + Image -->
+        <div class="index-features-section__grid">
+            <!-- Content Column (START side in RTL = right) -->
+            <div class="index-features-section__content">
+                <div class="index-features-section__feature">
+                    <div class="index-features-section__feature-icon">
+                        <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="index-features-section__feature-text">
+                        <h3>גישה אינטגרטיבית שלמה</h3>
+                        <p>לראשונה בישראל — מסגרת טיפולית שמאחדת את כל רבדי הקיום: גוף, נפש, תודעה ונשמה, לכדי שפה טיפולית אחת מדויקת ומלאה.</p>
+                    </div>
+                </div>
+                <div class="index-features-section__feature">
+                    <div class="index-features-section__feature-icon">
+                        <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                            <path d="M16 16L20 18L16 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="index-features-section__feature-text">
+                        <h3>מסגרות טיפוליות ברורות</h3>
+                        <p>מודלים, המשגות וכלים פרקטיים שיאפשרו לכם להבין בדיוק מה קורה בחדר — ומה הצעד הבא. בלי ניחושים, בלי ללכת לאיבוד.</p>
+                    </div>
+                </div>
+                <div class="index-features-section__feature">
+                    <div class="index-features-section__feature-icon">
+                        <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="index-features-section__feature-text">
+                        <h3>ביטחון מקצועי אמיתי</h3>
+                        <p>הביטחון שלכם ייבנה מתוך ידע, התנסות מונחית והבנה עמוקה — לא מסיסמאות. תדעו בדיוק מה אתם עושים, ותשדרו זאת למטופל.</p>
+                    </div>
+                </div>
+                <div class="index-features-section__feature">
+                    <div class="index-features-section__feature-icon">
+                        <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                            <path d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <div class="index-features-section__feature-text">
+                        <h3>קהילה מקצועית צומחת</h3>
+                        <p>לא תלמדו לבד. תהיו חלק מקהילה תומכת של מטפלים שמתפתחים יחד, חולקים תובנות, ומלווים זה את זה לאורך הדרך.</p>
+                    </div>
+                </div>
+                <div class="index-features-section__feature">
+                    <div class="index-features-section__feature-icon">
+                        <svg data-element-type="icon" data-icon-type="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3C8 3 4 5 4 9C4 13 8 15 12 15C16 15 20 13 20 9C20 5 16 3 12 3Z" stroke="currentColor" stroke-width="1.5"></path>
+                            <path d="M4 13C4 17 8 19 12 19C16 19 20 17 20 13" stroke="currentColor" stroke-width="1.5"></path>
+                            <path d="M4 17V21C4 21 8 23 12 23C16 23 20 21 20 21V17" stroke="currentColor" stroke-width="1.5"></path>
+                        </svg>
+                    </div>
+                    <div class="index-features-section__feature-text">
+                        <h3>מסע אישי משמעותי</h3>
+                        <p>המטפל הוא הכלי. התוכנית מזמינה אתכם למסע התפתחות אישי עמוק, שבו תפגשו את עצמכם מחדש — ותהפכו למטפלים נוכחים, מחוברים ומדויקים יותר.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Column (END side in RTL = left) -->
+            <div class="index-features-section__image-wrapper">
+                <div class="index-features-section__image-backplate" aria-hidden="true"></div>
+                <div class="index-features-section__image">
+                    <img loading="lazy" decoding="async" data-placeholder="index-features-image-1" data-context="A warm, softly-lit close-up of a facilitated circle discussion in a healing workshop. Hands resting gently on journals, a textured notebook with handwritten insights, and a cup of herbal tea on a wooden table. The atmosphere is intimate, grounded, and deeply human — capturing the essence of therapeutic education." width="600" height="750" src="/assets/site-index-features-image-1.webp" alt="סדנת הכשרה טיפולית — מעגל שיח מונחה עם מחברות וכלי כתיבה על שולחן עץ">
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlighted Band -->
+        <div class="index-features-section__highlight">
+            <p class="index-features-section__highlight-text">גוף, נפש, תודעה ונשמה — ארבע שפות שהופכות לאחת. זוהי תמצית הגישה שלנו, והבסיס לכל תהליך ריפוי עמוק ומשמעותי.</p>
+        </div>
+    </div>
+
+    <!-- Bottom SVG Divider -->
+    <div class="index-features-section__divider-wrapper" aria-hidden="true">
+        <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,80 L0,30 Q150,50 300,25 T600,35 Q750,45 900,20 T1200,40 L1200,80 Z" fill="var(--bg-dark)"></path>
+        </svg>
+    </div>
+</section>
+
+<section data-band-index="4" id="team" class="index-team-section" data-layout-spec="בית-team">
+    <div class="index-team-section__container">
+        <!-- Section Header -->
+        <header class="index-team-section__header">
+            <h2 class="index-team-section__title">המנחות שלנו — הלב הפועם של התוכנית</h2>
+            <p class="index-team-section__subtitle">פוגשות אתכם מטפלות מובילות שצברו ניסיון של עשרות שנים, פיתחו מתודות ייחודיות, והובילו אלפי אנשים לריפוי עמוק. הן כאן כדי להעניק לכם את הביטחון, הכלים וההמשגות שיהפכו אתכם למטפלים שאתם שואפים להיות.</p>
+        </header>
+
+        <!-- Biographies Grid -->
+        <div class="index-team-section__grid">
+            <!-- Card 1: Keren Sela -->
+            <article class="index-team-section__card">
+                <div class="index-team-section__card-image-wrapper">
+                    <img loading="lazy" decoding="async" data-placeholder="index-team-image-1" data-context="Portrait of a senior Israeli female clinical psychologist in her 50s, warm and confident expression, professional setting with soft natural light, wearing elegant casual attire in earthy tones, background suggesting therapy or healing space" width="600" height="400" src="/assets/site-index-team-image-1.webp" alt="דיוקן של קרן סלע, פסיכולוגית קלינית בכירה" class="index-team-section__card-img">
+                </div>
+                <div class="index-team-section__card-content">
+                    <h3 class="index-team-section__card-name">קרן סלע</h3>
+                    <p class="index-team-section__card-role">פסיכולוגית קלינית, מרצה ומנחת סדנאות בכירה</p>
+                    <div class="index-team-section__card-bio">
+                        <p>קרן היא פסיכולוגית קלינית בעלת ניסיון של למעלה מ-20 שנה, המשלבת בעבודתה ידע אקדמי מעמיק עם גישות מתקדמות מתחומי התודעה, ההתפתחות האישית והרוח. היא ליוותה מאות מטפלים בתהליכי הכשרה והתמקצעות, וסייעה להם לגלות את הקול הייחודי שלהם בקליניקה.</p>
+                        <p>החזון של קרן נולד מתוך ההבנה שמטפלים רבים יוצאים לדרכם עם ידע רב אך ללא ביטחון מקצועי אמיתי. היא פיתחה מודלים ייחודיים להמשגה טיפולית המחברים בין גוף, נפש, תודעה ונשמה — ומאפשרים למטפלים להוביל תהליכי ריפוי עוצמתיים ומדויקים.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2: Patricia Yahav -->
+            <article class="index-team-section__card">
+                <div class="index-team-section__card-image-wrapper">
+                    <img loading="lazy" decoding="async" data-placeholder="index-team-image-2" data-context="Portrait of a female integrative healing practitioner in her 40s, serene and confident, founder of the Source Method, soft studio lighting, wearing flowing natural fabrics in neutral tones, surrounded by elements suggesting movement and body awareness" width="600" height="400" src="/assets/site-index-team-image-2.webp" alt="דיוקן של פטריסיה יהב, מייסדת שיטת המקור" class="index-team-section__card-img">
+                </div>
+                <div class="index-team-section__card-content">
+                    <h3 class="index-team-section__card-name">פטריסיה יהב</h3>
+                    <p class="index-team-section__card-role">מייסדת שיטת המקור, מנחת מטפלים ומפתחת מתודות ריפוי</p>
+                    <div class="index-team-section__card-bio">
+                        <p>פטריסיה היא היוצרת של שיטת המקור — גישה אינטגרטיבית לריפוי גוף-נפש שהוכיחה את עצמה בקליניקות ובסדנאות ברחבי הארץ. היא הכשירה מאות מטפלים והנחתה אלפי מפגשים אישיים וקבוצתיים, תוך שהיא מעניקה כלים פרקטיים ומדויקים לעבודה טיפולית.</p>
+                        <p>השיטה שלה שינתה את חייהן של למעלה מ-2,000 נשים, והעניקה להן כלים לריפוי עצמי ולצמיחה אישית. פטריסיה מביאה לתוכנית את הניסיון העשיר שלה בהכשרת מטפלים, ואת היכולת הנדירה שלה לפשט תהליכים מורכבים לכדי כלים ישימים ונגישים.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Trust Metrics Strip -->
+        <div class="index-team-section__metrics-strip">
+            <div class="index-team-section__metric">
+                <span class="index-team-section__metric-number">20+</span>
+                <span class="index-team-section__metric-label">שנות ניסיון</span>
+            </div>
+            <div class="index-team-section__metric-divider" aria-hidden="true"></div>
+            <div class="index-team-section__metric">
+                <span class="index-team-section__metric-number">אלפים</span>
+                <span class="index-team-section__metric-label">מודרכים ומטופלים</span>
+            </div>
+            <div class="index-team-section__metric-divider" aria-hidden="true"></div>
+            <div class="index-team-section__metric">
+                <span class="index-team-section__metric-number">2,000+</span>
+                <span class="index-team-section__metric-label">חיים שהושפעו</span>
+            </div>
+            <div class="index-team-section__metric-divider" aria-hidden="true"></div>
+            <div class="index-team-section__metric">
+                <span class="index-team-section__metric-number">ראשון</span>
+                <span class="index-team-section__metric-label">מסוגו בישראל</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Divider: Soft Cream Paper-Layer Peel -->
+    <div class="index-team-section__divider-wrapper" data-no-icon-edit="true" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,80 L0,45 Q60,38 120,48 T240,42 Q300,48 360,38 T480,45 Q540,38 600,48 T720,42 Q780,48 840,38 T960,45 Q1020,38 1080,48 T1200,42 L1200,80 Z" fill="var(--bg-light)"></path>
+        </svg>
+    </div>
+</section>
+
+<section data-band-index="5" id="agenda" class="index-agenda-section" data-layout-spec="בית-agenda">
+  <div class="index-agenda-section__container">
     
+    <!-- Header -->
+    <div class="index-agenda-section__header">
+      <h2 class="index-agenda-section__title">מה מחכה לכם בוובינר</h2>
+      <p class="index-agenda-section__subtitle">הצצה אמיתית אל מאחורי הקלעים של תוכנית אומנויות הטיפול — כלים, תובנות ודרך ברורה למטפל שבחרתם להיות</p>
+    </div>
 
+    <!-- Main Content Grid -->
+    <div class="index-agenda-section__grid">
+      
+      <!-- Agenda List Panel -->
+      <div class="index-agenda-section__agenda-panel">
+        <ul class="index-agenda-section__agenda-list">
+          
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">איך נולד החזון לתוכנית אומנויות הטיפול</h3>
+              <p class="index-agenda-section__item-desc">הסיפור האישי והמקצועי שהוביל ליצירת המסלול הראשון מסוגו בישראל</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">מה מבדיל קליניקה מלאה מקליניקה שקטה</h3>
+              <p class="index-agenda-section__item-desc">ההבדל הדק שבין מטפל שמחכה לטלפון לבין מטפל שמטופלים ממליצים עליו שוב ושוב</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">הסיבה האמיתית שמטפלים רבים עדיין לא מרגישים בטוחים</h3>
+              <p class="index-agenda-section__item-desc">זה לא חוסר ידע — זה חוסר מסגרת פנימית שמאפשרת לסמוך על עצמך</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">איך בונים ביטחון מקצועי אמיתי</h3>
+              <p class="index-agenda-section__item-desc">המודל המעשי שהופך ידע תיאורטי לוודאות פנימית בחדר הטיפול</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">למה ידע לבד כבר לא מספיק</h3>
+              <p class="index-agenda-section__item-desc">הפער בין מה שלמדתם לבין מה שבאמת קורה כשאתם יושבים מול מטופל</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">ארבעת הרבדים שכל מטפל חייב להכיר</h3>
+              <p class="index-agenda-section__item-desc">גוף, נפש, תודעה ונשמה — המפה השלמה לריפוי עמוק ומדויק</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">איך להפסיק לאסוף שיטות ולהתחיל לעבוד מתוך דרך אחת ברורה</h3>
+              <p class="index-agenda-section__item-desc">המעבר ממטפל שמרגיש מפוזר למטפל שמוביל תהליך בבהירות</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">איך לבנות קליניקה מצליחה מתוך מקצועיות וביטחון</h3>
+              <p class="index-agenda-section__item-desc">האסטרטגיה הפרקטית שהופכת את הקליניקה שלכם ממקור פרנסה למקור שליחות</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">הצצה ראשונה אל תוך התוכנית</h3>
+              <p class="index-agenda-section__item-desc">מבנה הלימודים, הכלים המרכזיים והקהילה שתלווה אתכם לאורך הדרך</p>
+            </div>
+          </li>
 
+          <li class="index-agenda-section__agenda-item">
+            <div class="index-agenda-section__marker">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+                <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="index-agenda-section__item-content">
+              <h3 class="index-agenda-section__item-title">שאלות ותשובות — שיחה פתוחה עם קרן ופטריסיה</h3>
+              <p class="index-agenda-section__item-desc">הזדמנות נדירה לשאול את כל מה שחשוב לכם, בזמן אמת</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Side Card: Who This is For -->
+      <aside class="index-agenda-section__side-card">
+        <div class="index-agenda-section__side-card-inner">
+          <h3 class="index-agenda-section__side-card-title">למי הוובינר הזה מתאים</h3>
+          <ul class="index-agenda-section__audience-list">
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>מטפלים בתחילת דרכם</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>מטפלים מנוסים שמחפשים עומק</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>מטפלים רגשיים</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>מטפלים הוליסטיים</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>מאמנים ומנחים</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>אנשי טיפול והתפתחות אישית</span>
+            </li>
+            <li class="index-agenda-section__audience-item">
+              <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8.5L6.5 12L13 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span>כל מי שנקרא להוביל ריפוי וצמיחה</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- Future Vision Block -->
+    <div class="index-agenda-section__vision">
+      <div class="index-agenda-section__vision-inner">
+        <p class="index-agenda-section__vision-text">
+          דמיינו את עצמכם בעוד שנה מהיום. אתם נכנסים לקליניקה שלכם בתחושת שקט פנימי. אתם יודעים בדיוק מה לעשות. המטופלים שלכם חווים תהליכים עמוקים, והם מספרים עליכם לחברים, למשפחה, לקולגות. הקליניקה שלכם מלאה — לא כי שיווקתם באגרסיביות, אלא כי משהו בכם השתנה. הביטחון שלכם הפך למגדלור, והמטופלים פשוט מרגישים את זה. זה לא חלום — זו התוצאה של דרך עבודה ברורה, כזו שמגיעה מתוך חיבור אמיתי בין גוף, נפש, תודעה ונשמה.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Divider: Subtle linear fade with dotted constellation marks -->
+  <div class="index-agenda-section__divider-wrapper" data-no-icon-edit="true" aria-hidden="true">
+    <svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="agendaFade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--bg-light)" stop-opacity="0"></stop>
+          <stop offset="100%" stop-color="var(--bg-dark)" stop-opacity="1"></stop>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1200" height="40" fill="url(#agendaFade)"></rect>
+      <!-- Dotted constellation-like marks -->
+      <circle cx="100" cy="20" r="1.5" fill="var(--primary)" opacity="0.4"></circle>
+      <circle cx="250" cy="12" r="1" fill="var(--accent)" opacity="0.5"></circle>
+      <circle cx="400" cy="28" r="1.5" fill="var(--primary)" opacity="0.3"></circle>
+      <circle cx="550" cy="18" r="1" fill="var(--accent)" opacity="0.6"></circle>
+      <circle cx="700" cy="32" r="1.5" fill="var(--primary)" opacity="0.35"></circle>
+      <circle cx="850" cy="15" r="1" fill="var(--accent)" opacity="0.45"></circle>
+      <circle cx="1000" cy="25" r="1.5" fill="var(--primary)" opacity="0.4"></circle>
+      <circle cx="1150" cy="18" r="1" fill="var(--accent)" opacity="0.5"></circle>
+      <circle cx="175" cy="22" r="0.8" fill="var(--primary)" opacity="0.3"></circle>
+      <circle cx="625" cy="10" r="0.8" fill="var(--accent)" opacity="0.4"></circle>
+      <circle cx="925" cy="30" r="0.8" fill="var(--primary)" opacity="0.35"></circle>
+    </svg>
+  </div>
+
+</section>
 
 <section data-band-index="6" id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
   <div class="index-cta-section__container">

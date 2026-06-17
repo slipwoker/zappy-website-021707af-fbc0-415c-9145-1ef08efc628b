@@ -4565,6 +4565,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 
 /* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
 
+
+footer.site-footer {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
