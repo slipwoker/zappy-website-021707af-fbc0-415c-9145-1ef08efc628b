@@ -68,16 +68,16 @@
   src: url('assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 :root {
-  --primary: #C96F4A;
+--primary: #C96F4A;
   --secondary: #6F7B5D;
   --accent: #CDBDAA;
-  --bg-light: #F3EBDD;
+  --bg-light: #ffffff;
   --bg-dark: #2E2925;
-  --text-dark: #2E2925;
+  --text-dark: #4a4a4a;
   --text-light: #F3EBDD;
-  --text-muted: #8C7E70;
-  --border-light: #E2D6C7;
-  --border-dark: #4A433D;
+  --text-muted: #707070;
+  --border-light: #888077;
+  --border-dark: #7d7670;
   --nav-bg: #F3EBDD;
   --nav-text: #2E2925;
   --nav-text-hover: #C96F4A;
@@ -98,6 +98,13 @@
   --spacing-element-gap: 16px;
   --transition-default: all 0.3s ease;
   --transition-hover: all 0.3s ease;
+  --primary-color: #C96F4A;
+  --secondary-color: #6F7B5D;
+  --accent-color: #CDBDAA;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --text-color: #4a4a4a;
+  --text-secondary-color: #707070;
 }
 
 *,
@@ -266,12 +273,12 @@ table {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #C4614A 0%, #D4956A 100%);
+  background: linear-gradient(135deg, #C86C46 0%, #D3896B 100%);
   color: #FFFFFF;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #B8553E 0%, #C4855A 100%);
+  background: linear-gradient(135deg, #BD5F39 0%, #CC7652 100%);
   color: #FFFFFF;
 }
 
@@ -331,7 +338,7 @@ html:not([dir]) .whatsapp-float {
 .phone-header-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; color: #F3EBDD; }
 .nav-menu { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
 .nav-menu li a { text-decoration: none; color: #F3EBDD; font-weight: 500; transition: color 0.3s; }
-.nav-menu li a:hover { color: #C96F4A; }
+.nav-menu li a:hover { color: #ce7c5a; }
 .nav-cta-container { margin-left: auto; display: flex; align-items: center; }
 .nav-cta-btn { background: #C96F4A; color: #2E2925; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: opacity 0.3s; }
 .nav-cta-btn:hover { opacity: 0.9; }
@@ -359,7 +366,7 @@ html:not([dir]) .whatsapp-float {
 .phone-header-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; color: #F3EBDD; }
 .nav-menu { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; }
 .nav-menu li a { text-decoration: none; color: #F3EBDD; font-weight: 500; transition: color 0.3s; }
-.nav-menu li a:hover { color: #C96F4A; }
+.nav-menu li a:hover { color: #ce7c5a; }
 .nav-cta-container { margin-left: auto; display: flex; align-items: center; }
 .nav-cta-btn { background: #C96F4A; color: #2E2925; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: opacity 0.3s; }
 .nav-cta-btn:hover { opacity: 0.9; }
@@ -1650,7 +1657,7 @@ main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !importa
 }
 
 /* V2 Decorative Helpers — quote marks */
-:root { --decorative-quote-color: var(--accent, #b48b59); --decorative-quote-font: var(--accent-font, var(--font-display, serif)); }
+:root { --decorative-quote-color: var(--accent, #C96F4A); --decorative-quote-font: var(--accent-font, var(--font-display, serif)); }
 blockquote::before, .quote::before, [data-quote]::before {
   content: "\201C";
   font-family: var(--decorative-quote-font);
@@ -1681,7 +1688,7 @@ hr.section-flourish, .section-flourish, [data-section-divider] {
   height: 2px;
   margin: 1.25rem auto;
   border: 0;
-  background: linear-gradient(90deg, transparent, var(--accent, var(--primary, #b48b59)) 30%, var(--accent, var(--primary, #b48b59)) 70%, transparent);
+  background: linear-gradient(90deg, transparent, var(--accent, var(--primary, #C86B45)) 30%, var(--accent, var(--primary, #C86B45)) 70%, transparent);
   border-radius: 999px;
   opacity: 0.85;
 }
@@ -1847,7 +1854,7 @@ main { flex: 1 0 auto; }
 
 /* Benefit Card */
 .index-benefits-section .benefit-card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   padding: 32px;
@@ -2089,7 +2096,7 @@ main { flex: 1 0 auto; }
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     color: var(--primary);
@@ -2142,7 +2149,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-story-section .insight-card {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 8px 40px rgba(100,70,50,0.1);
     padding: 28px 32px;
@@ -2871,7 +2878,7 @@ main { flex: 1 0 auto; }
 
 /* Agenda Panel */
 .index-agenda-section__agenda-panel {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 8px 40px rgba(100,70,50,0.1);
   padding: 32px;
@@ -2941,7 +2948,7 @@ main { flex: 1 0 auto; }
 
 /* Side Card */
 .index-agenda-section__side-card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 8px 40px rgba(100,70,50,0.1);
   padding: 32px;
@@ -3295,7 +3302,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-cta-section__submit:hover {
-  background: #B85A3A;
+  background: #C96F4A;
   box-shadow: 0 6px 20px rgba(201, 111, 74, 0.4);
   transform: translateY(-2px);
 }
@@ -3707,8 +3714,8 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   --cc-btn-primary-bg: #c96f4a;
   --cc-btn-primary-color: #ffffff;
   --cc-btn-primary-border: #c96f4a;
-  --cc-btn-primary-hover-bg: #b05631;
-  --cc-btn-primary-hover-border: #b05631;
+  --cc-btn-primary-hover-bg: #C96F4A;
+  --cc-btn-primary-hover-border: #C96F4A;
   --cc-btn-primary-hover-color: #ffffff;
   /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
    * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
@@ -3835,7 +3842,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
  * defaults for the preferences modal's two secondary pills). */
 #zappy-cookie-banner .zappy-cookie-banner__button--customize {
   background-color: transparent !important;
-  color: #c96f4a !important;
+  color: #b45b36 !important;
   border: none !important;
   padding: 0 8px !important;
   height: 32px !important;
@@ -3845,7 +3852,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 }
 
 #zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
-  color: #b05631 !important;
+  color: #b45b36 !important;
   background-color: transparent !important;
 }
 
@@ -4430,7 +4437,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-hero-section .hero-btn-primary:hover {
   transform: translateY(-4px);
   box-shadow: 0 24px 64px rgba(196, 97, 74, 0.35);
-  background: #C4614A;
+  background: #C96F4A;
 }
 
 .index-hero-section .hero-btn-ghost {
@@ -4564,6 +4571,17 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 /* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+
+
+/* === BUTTON TEXT OVERRIDES START === */
+.btn-accent,
+.btn--accent,
+[class*="btn-accent"],
+[class*="btn--accent"] { color: #333333 !important; }
+.navbar .nav-cta-btn,
+.nav-cta-btn { color: #FFFFFF !important; }
+/* === BUTTON TEXT OVERRIDES END === */
 
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
