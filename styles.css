@@ -4571,34 +4571,6 @@ footer.site-footer {
 .index-agenda-section .index-agenda-section__check-icon path {
   stroke-width: 3;
 }
-
-.index-benefits-section, .index-benefits-section h2, .index-benefits-section h3, .index-benefits-section p, .index-benefits-section .benefit-title, .index-benefits-section .benefit-text, .index-benefits-section .benefits-heading, .index-benefits-section .benefits-subheading, .index-benefits-section .benefits-reflection-text, .index-benefits-section .benefits-reflection-author {
-  color: #FFFFFF !important;
-}
-
-.index-story-section, .index-story-section h2, .index-story-section h3, .index-story-section p, .index-story-section .story-intro-heading, .index-story-section .story-intro-text, .index-story-section .narrative-title, .index-story-section .narrative-text, .index-story-section .insight-text, .index-story-section .insight-label {
-  color: #FFFFFF !important;
-}
-
-.index-features-section, .index-features-section h2, .index-features-section h3, .index-features-section p, .index-features-section .index-features-section__title, .index-features-section .index-features-section__subtitle, .index-features-section .index-features-section__feature h3, .index-features-section .index-features-section__feature p, .index-features-section .index-features-section__highlight-text {
-  color: #FFFFFF !important;
-}
-
-.index-team-section, .index-team-section h2, .index-team-section h3, .index-team-section p, .index-team-section .index-team-section__title, .index-team-section .index-team-section__subtitle, .index-team-section .index-team-section__card-name, .index-team-section .index-team-section__card-role, .index-team-section .index-team-section__card-bio p, .index-team-section .index-team-section__metric-number, .index-team-section .index-team-section__metric-label {
-  color: #FFFFFF !important;
-}
-
-.index-agenda-section, .index-agenda-section h2, .index-agenda-section h3, .index-agenda-section p, .index-agenda-section .index-agenda-section__title, .index-agenda-section .index-agenda-section__subtitle, .index-agenda-section .index-agenda-section__item-title, .index-agenda-section .index-agenda-section__item-text, .index-agenda-section .index-agenda-section__audience-title, .index-agenda-section .index-agenda-section__audience-item span, .index-agenda-section .index-agenda-section__vision-text {
-  color: #FFFFFF !important;
-}
-
-.index-cta-section, .index-cta-section h2, .index-cta-section h3, .index-cta-section p, .index-cta-section .index-cta-section__title, .index-cta-section .index-cta-section__description, .index-cta-section .index-cta-section__benefit-item, .index-cta-section .index-cta-section__detail-text, .index-cta-section .index-cta-section__scarcity {
-  color: #FFFFFF !important;
-}
-
-.index-hero-section .hero-label {
-  color: #FFFFFF !important;
-}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
