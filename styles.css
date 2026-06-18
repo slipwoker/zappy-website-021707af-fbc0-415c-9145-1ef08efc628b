@@ -4567,6 +4567,10 @@ footer.site-footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.index-agenda-section .index-agenda-section__check-icon path {
+  stroke-width: 3;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
