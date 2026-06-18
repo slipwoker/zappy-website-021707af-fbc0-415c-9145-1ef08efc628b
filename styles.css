@@ -4565,6 +4565,11 @@ footer.site-footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+html {
+  transform: scale(1.2);
+  transform-origin: top center;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
