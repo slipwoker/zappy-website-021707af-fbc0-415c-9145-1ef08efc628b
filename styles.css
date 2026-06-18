@@ -4583,6 +4583,34 @@ footer.site-footer {
 .index-agenda-section__vision span {
   color: #FFFFFF !important;
 }
+
+.index-agenda-section__vision {
+  background-color: var(--secondary-color) !important;
+  color: #FFFFFF !important;
+}
+
+.index-agenda-section__vision h3,
+.index-agenda-section__vision h3 span,
+.index-agenda-section__vision p,
+.index-agenda-section__vision span {
+  color: #FFFFFF !important;
+}
+
+.index-agenda-section__vision h3 {
+  color: #FFFFFF !important;
+}
+
+.index-agenda-section__vision h3 span {
+  color: #FFFFFF !important;
+}
+
+.index-agenda-section__vision p {
+  color: #FFFFFF !important;
+}
+
+.index-agenda-section__vision span {
+  color: #FFFFFF !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
