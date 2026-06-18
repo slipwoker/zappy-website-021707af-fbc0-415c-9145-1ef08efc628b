@@ -1352,6 +1352,68 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+<script>
+  (function() {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Simple validation feedback
+      const requiredFields = form.querySelectorAll('[required]');
+      let isValid = true;
+      
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          isValid = false;
+          field.style.borderColor = '#e74c3c';
+          field.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.12)';
+          
+          field.addEventListener('input', function resetBorder() {
+            field.style.borderColor = '';
+            field.style.boxShadow = '';
+            field.removeEventListener('input', resetBorder);
+          }, { once: true });
+        }
+      });
+
+      // Email validation
+      const emailField = form.querySelector('#contact-email');
+      if (emailField && emailField.value.trim()) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailField.value.trim())) {
+          isValid = false;
+          emailField.style.borderColor = '#e74c3c';
+          emailField.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.12)';
+          emailField.addEventListener('input', function resetBorder() {
+            emailField.style.borderColor = '';
+            emailField.style.boxShadow = '';
+            emailField.removeEventListener('input', resetBorder);
+          }, { once: true });
+        }
+      }
+
+      if (isValid) {
+        const submitBtn = form.querySelector('.form-submit-btn');
+        const originalText = submitBtn.querySelector('.form-submit-text').textContent;
+        submitBtn.querySelector('.form-submit-text').textContent = 'נשלח בהצלחה! ✓';
+        submitBtn.style.background = '#2ecc71';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+          submitBtn.querySelector('.form-submit-text').textContent = originalText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+          form.reset();
+        }, 2500);
+      }
+    });
+  })();
+</script>
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
