@@ -7,21 +7,21 @@
 ## Pages
 
 ### בית
-https://hatochnit-leomanuyot-hatipul.zappy5.app
+https://webinar.kerensela.com
 וובינר חינמי למטפלים רגשיים שמוכנים לצמוח. בואו לגלות איך לפתח ביטחון מקצועי עמוק דרך הכשרה אינטגרטיבית גוף נפש נשמה. המקום שלכם למסע ריפוי מעצים מתחיל כאן!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://hatochnit-leomanuyot-hatipul.zappy5.app/privacy
+https://webinar.kerensela.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://hatochnit-leomanuyot-hatipul.zappy5.app/terms
+https://webinar.kerensela.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://hatochnit-leomanuyot-hatipul.zappy5.app/accessibility
+https://webinar.kerensela.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -31,16 +31,17 @@ Information about WCAG compliance and accessibility features.
 - (No contact details configured yet.)
 
 ### Contact form
-- URL: https://hatochnit-leomanuyot-hatipul.zappy5.app
-- Endpoint: https://hatochnit-leomanuyot-hatipul.zappy5.app/api/email/contact-form
+- URL: https://webinar.kerensela.com
+- Endpoint: https://webinar.kerensela.com/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
   - `name` (text, required)
   - `email` (email, required)
-  - `phone` (tel, required)
-  - `message` (text)
-  - `privacy_consent` (checkbox, required)
+  - `phone` (tel)
+  - `subject` (select)
+  - `message` (textarea, required)
+  - `consent` (checkbox, required)
 
 ---
 
@@ -62,6 +63,6 @@ Health & Wellness Education
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://hatochnit-leomanuyot-hatipul.zappy5.app/sitemap.xml
-- Robots: https://hatochnit-leomanuyot-hatipul.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://hatochnit-leomanuyot-hatipul.zappy5.app/llms-full.txt
+- Sitemap (XML): https://webinar.kerensela.com/sitemap.xml
+- Robots: https://webinar.kerensela.com/robots.txt
+- Flattened page text (for LLMs): https://webinar.kerensela.com/llms-full.txt
