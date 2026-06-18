@@ -380,11 +380,6 @@ html:not([dir]) .whatsapp-float {
   html[dir="rtl"] .nav-cta-container { left: 30px; right: auto; }
 }
 
-/* ============================================
-   NAVBAR LAYOUT - POST-GENERATION FIXES
-   Structural layout only - colors from Claude
-   ============================================ */
-
 /* Base navbar styles - structural only, colors from AI */
 .navbar {
   position: sticky;
@@ -1060,7 +1055,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
 
   /* Prevent hero image fade gradient from bleeding over headline text below */
   /* The .image-fade-gradient has bottom: -30px which extends below parent; */
-  /* on mobile stacked layout this overlaps the h1 text */
   .hero-image-column {
     overflow: hidden !important;
   }
@@ -1093,13 +1087,6 @@ html:not([dir="rtl"]):not([lang="he"]):not([lang="ar"]) .dropdown-menu {
     right: auto !important;
   }
 }
-
-/* ============================================
-   RTL POSITIONING (Hebrew, Arabic)
-   For RTL mobile: hamburger on RIGHT, phone on LEFT
-   (natural mirror of LTR layout)
-   Uses !important to override any inline styles
-   ============================================ */
 @media (max-width: 768px) {
   html[dir="rtl"] .mobile-toggle,
   html[lang="he"] .mobile-toggle,
@@ -1171,25 +1158,6 @@ nav.navbar {
   overflow-x: clip !important;
   overflow-y: visible !important;
 }
-
-/* iOS Safari fix: When the page has hidden horizontal overflow (which iOS
-   does not clip on the <html> element), width: 100% / 100vw on a fixed
-   element resolves to the visual viewport width, which can exceed the
-   actual layout viewport. This pushes children positioned with right:0
-   off-screen to the right.
-
-   Two-part fix:
-   1. Navbar — left:0 + right:0 + width:auto + overflow-x:clip anchors
-      the navbar to the real layout viewport on all mobile browsers.
-      overflow-x:clip (instead of hidden) prevents Safari from creating
-      a scroll container that intercepts touch events on child elements.
-   2. Mobile dropdown menu — position:fixed + right:0 on the menu still
-      anchors to the iOS visual viewport (regardless of its navbar parent).
-      We use a CSS variable --ios-viewport-gap, set by a runtime JS snippet
-      (see ensureIOSNavbarGapFix in githubService) to
-      (window.innerWidth - document.documentElement.clientWidth). Shifting
-      the menu's 'right' by that gap lands it on the real layout-viewport
-      right edge on iOS, and is a no-op on every other browser (gap=0).  */
 @media (max-width: 768px) {
   .navbar,
   nav.navbar {
@@ -1234,8 +1202,6 @@ nav.navbar {
   align-items: center !important;
   justify-content: space-between !important;
 }
-
-/* RTL layout for cloned sites (without nav-right-group) */
 /* Base RTL styles - apply to all screens */
 html[dir="rtl"] .nav-container,
 html[lang="he"] .nav-container,
@@ -1280,8 +1246,6 @@ html[lang="ar"] .nav-cta-btn {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
-
-/* DESKTOP ONLY: Horizontal flex layout for RTL navbar - prevents breaking mobile vertical menu */
 @media (min-width: 769px) {
   html[dir="rtl"] .nav-container,
   html[lang="he"] .nav-container,
@@ -3485,13 +3449,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   font-family: inherit !important;
   color: var(--cc-primary-color);
 }
-
-/* === Zappy-owned slim bottom bar ===
- * Single-row inline layout: [description text] ......... [Customize] [Accept]
- * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
- * consent modal. That avoids vanilla-cookieconsent's internal
- * <button><span>Label</span></button> structure entirely.
- */
 #zappy-cookie-banner {
   position: fixed !important;
   inset: auto 0 0 0 !important;
@@ -4621,6 +4578,113 @@ footer.site-footer {
 #agenda .index-agenda-section__vision p,
 #agenda .index-agenda-section__vision span {
   color: #FFFFFF !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (Home-layout)
+   Added: 2026-06-18T12:37:53.328Z
+   ═══════════════════════════════════════════════════════════ */
+.home-layout-section {
+  direction: rtl;
+  text-align: right;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.home-layout-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-height: 600px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-layout-section__panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.home-layout-section__panel-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 360px;
+  padding: 1.5rem;
+}
+
+.home-layout-section__panel-title {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-dark);
+}
+
+.home-layout-section__panel-desc {
+  font-family: 'Assistant', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--text-dark);
+  opacity: 0.85;
+}
+
+/* Panel Background Colors */
+.home-layout-section__panel--nefesh {
+  background-color: #B7B89A; /* Sage/Olive Green */
+}
+
+.home-layout-section__panel--guf {
+  background-color: #C89B8B; /* Dusty Rose/Terracotta */
+}
+
+.home-layout-section__panel--neshamah {
+  background-color: #D9C9A6; /* Warm Sandy Yellow/Beige */
+}
+
+.home-layout-section__panel--todaah {
+  background-color: #9DA7B5; /* Dusty Periwinkle/Slate Blue */
+}
+
+/* Subtle hover effect for depth */
+.home-layout-section__panel:hover {
+  filter: brightness(1.03);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-layout-section__grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto;
+    min-height: auto;
+  }
+
+  .home-layout-section__panel {
+    min-height: 250px;
+    padding: 2rem 1.5rem;
+  }
+
+  .home-layout-section__panel-title {
+    font-size: 2.5rem;
+  }
+
+  .home-layout-section__panel-content {
+    max-width: 280px;
+  }
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
