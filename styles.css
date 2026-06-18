@@ -2905,6 +2905,7 @@ main { flex: 1 0 auto; }
   margin-right: auto;
 }
 
+/* Benefits List */
 .index-cta-section__benefits {
   list-style: none;
   padding: 0;
@@ -2912,7 +2913,7 @@ main { flex: 1 0 auto; }
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .index-cta-section__benefit-item {
