@@ -2792,8 +2792,9 @@ main { flex: 1 0 auto; }
     }
 
     .index-team-section__card-image-wrapper {
-        aspect-ratio: 4 / 5;
-    }
+  aspect-ratio: 4 / 5;
+  margin-bottom: 0;
+}
 
     .index-team-section__metrics-strip {
         gap: 16px;
@@ -4564,11 +4565,6 @@ footer.site-footer {
   .index-agenda-section__timeline {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-html {
-  transform: scale(1.2);
-  transform-origin: top center;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
