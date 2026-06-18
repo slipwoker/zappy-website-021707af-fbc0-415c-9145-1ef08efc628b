@@ -4611,6 +4611,17 @@ footer.site-footer {
 .index-agenda-section__vision span {
   color: #FFFFFF !important;
 }
+
+#agenda .index-agenda-section__vision {
+  background-color: var(--secondary-color) !important;
+}
+
+#agenda .index-agenda-section__vision h3,
+#agenda .index-agenda-section__vision h3 span,
+#agenda .index-agenda-section__vision p,
+#agenda .index-agenda-section__vision span {
+  color: #FFFFFF !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
