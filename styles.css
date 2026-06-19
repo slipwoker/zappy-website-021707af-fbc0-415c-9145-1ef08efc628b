@@ -2596,11 +2596,12 @@ main { flex: 1 0 auto; }
 }
 
 .index-team-section__card-image-wrapper {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    border-radius: var(--radius-img, 12px) var(--radius-img, 12px) 0 0;
-    position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius-img, 12px) var(--radius-img, 12px) 0 0;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .index-team-section__card-img {
