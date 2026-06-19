@@ -4135,16 +4135,15 @@ footer.site-footer {
   color: var(--primary);
 }
 
-/* Vision Section */
 .index-agenda-section__vision {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(4px);
+  background: #6F7B5D;
+  backdrop-filter: none;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 8px 32px rgba(100, 70, 50, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .index-agenda-section__vision-text {
@@ -4152,10 +4151,10 @@ footer.site-footer {
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.75;
-  color: var(--text-dark);
+  color: #FFFFFF;
   text-align: right;
   margin: 0;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* Decorative Botanical */
