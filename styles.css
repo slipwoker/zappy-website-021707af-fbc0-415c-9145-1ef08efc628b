@@ -2694,10 +2694,11 @@ main { flex: 1 0 auto; }
 }
 
 .index-team-section__card-content {
-    padding: 28px 32px 32px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  padding: 28px 32px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
 }
 
 .index-team-section__card-name {
