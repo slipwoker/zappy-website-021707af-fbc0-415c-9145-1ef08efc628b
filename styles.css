@@ -4140,11 +4140,12 @@ footer.site-footer {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background: #6F7B5D;
+  background: #6F7B5D !important;
   backdrop-filter: none;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  color: #FFFFFF !important;
 }
 
 .index-agenda-section__vision-text {
