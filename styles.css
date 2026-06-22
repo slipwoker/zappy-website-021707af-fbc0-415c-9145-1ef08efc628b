@@ -2965,7 +2965,7 @@ main { flex: 1 0 auto; }
   line-height: 1.6;
   color: var(--text-light);
   width: 100%;
-  padding-inline-start: 0px;
+  padding-inline-start: 120px;
   justify-content: flex-start;
 }
 
