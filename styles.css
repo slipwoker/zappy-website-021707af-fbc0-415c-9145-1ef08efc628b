@@ -2946,7 +2946,6 @@ main { flex: 1 0 auto; }
   margin-right: auto;
 }
 
-/* Benefits List */
 .index-cta-section__benefits {
   list-style: none;
   padding: 0;
@@ -2954,21 +2953,20 @@ main { flex: 1 0 auto; }
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .index-cta-section__benefit-item {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 10px;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text-light);
-  text-align: center;
+  text-align: start;
   width: 100%;
-  justify-content: center;
-  padding-inline-start: 0;
+  padding-inline-start: 140px;
 }
 
 .index-cta-section__check {
