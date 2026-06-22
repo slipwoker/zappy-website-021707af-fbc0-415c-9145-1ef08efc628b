@@ -2957,16 +2957,16 @@ main { flex: 1 0 auto; }
 }
 
 .index-cta-section__benefit-item {
-  display: block;
+  display: flex;
   align-items: center;
   gap: 10px;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text-light);
-  text-align: start;
   width: 100%;
-  padding-inline-start: 140px;
+  padding-inline-start: 0px;
+  justify-content: flex-start;
 }
 
 .index-cta-section__check {
