@@ -1183,7 +1183,19 @@ html[dir="rtl"] .nav-menu a,
    ============================================ */
 
 /* Force navbar to be truly full width */
-header {
+header.navbar,
+header.site-header {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+header:has(> .navbar),
+header:has(> nav.navbar),
+header:has(> .nav-container),
+header:has(> nav > .nav-container) {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 !important;
@@ -2954,7 +2966,10 @@ main { flex: 1 0 auto; }
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start;
+  align-items: stretch;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .index-cta-section__benefit-item {
@@ -2966,7 +2981,7 @@ main { flex: 1 0 auto; }
   line-height: 1.6;
   color: var(--text-light);
   width: 100%;
-  padding-inline-start: 120px;
+  padding-inline-start: 0;
   justify-content: flex-start;
 }
 
