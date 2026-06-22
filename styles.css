@@ -2996,12 +2996,11 @@ main { flex: 1 0 auto; }
   flex-shrink: 0;
 }
 
-/* Submit Button */
 .index-cta-section__submit {
   background: var(--primary);
   color: #FFFFFF;
   padding: 16px 36px;
-  border-radius: var(--radius-btn, 8px);
+  border-radius: 100px;
   border: none;
   font-weight: 600;
   font-size: 1rem;
