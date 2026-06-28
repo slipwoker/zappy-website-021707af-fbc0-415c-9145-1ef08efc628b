@@ -4812,6 +4812,38 @@ footer.site-footer {
 }
 
 /* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+.thank-you-hero-section .thank-you-hero-section__btn--whatsapp {
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  padding: 16px 36px;
+  border-radius: 100px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.thank-you-hero-section .thank-you-hero-section__btn--whatsapp:hover {
+  background: #1ebe5d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+}
+
+@media (max-width: 768px) {
+.thank-you-hero-section .thank-you-hero-section__btn--whatsapp {
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
