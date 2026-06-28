@@ -32,7 +32,9 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: keren@kerensela.co.il
+- Phone: 0544911119
+- Phone (tel): tel:0544911119
 
 ### Contact form
 - URL: https://webinar.kerensela.com
