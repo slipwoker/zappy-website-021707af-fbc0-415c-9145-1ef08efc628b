@@ -43,7 +43,7 @@ Information about WCAG compliance and accessibility features.
 - Content-Type: application/json
 - Fields:
   - `fullName` (text, required)
-  - `email` (email)
+  - `email` (email, required)
   - `phone` (tel, required)
   - `privacy_consent` (checkbox, required)
 
